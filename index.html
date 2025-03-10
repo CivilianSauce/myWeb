@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menampilkan Gambar Utuh</title>
+    <title>Jam Digital</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000000;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100vh;
-            object-fit: contain;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20%;
         }
     </style>
 </head>
 <body>
-    <img src="Screenshot_2025-02-03_11_30_49.jpg" alt="Gambar Utuh">
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const date = now.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+            const time = now.toLocaleTimeString('id-ID');
+            document.getElementById("clock").innerHTML = date + "<br>" + time;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock();  // Panggil langsung agar tidak kosong di awal
+    </script>
 </body>
 </html>
