@@ -3,46 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASHION STORE</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fashion Minimalis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 p-4 text-white text-center text-2xl font-bold shadow-lg">
-        FASHION STORE
-    </header>
-    
-    <main class="container mx-auto p-6">
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="images/topi-stone-island.jpg" alt="TOPI BASEBALL STONE ISLAND" class="w-full rounded">
-                <h2 class="text-xl font-semibold mt-2">TOPI BASEBALL STONE ISLAND</h2>
-                <p class="text-gray-600">TOPI KUALITAS PREMIUM HARGA TERJANGKAU BAHAN TIDAK MUDAH GERAH.</p>
-                <p class="font-bold text-lg text-blue-600">Rp 100.000</p>
-                <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20TOPI%20BASEBALL%20STONE%20ISLAND%20seharga%20Rp100.000" class="bg-green-500 text-white px-4 py-2 rounded mt-2 hover:bg-green-700 block text-center">BELI SEKARANG</a>
-            </div>
-            
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="images/kaos-adidas.jpg" alt="KAOS ADIDAS" class="w-full rounded">
-                <h2 class="text-xl font-semibold mt-2">KAOS ADIDAS</h2>
-                <p class="text-gray-600">KAOS DENGAN BAHAN BERKUALITAS TINGGI TIDAK MUDAH GERAH DAN NYAMAN DIPAKAI.</p>
-                <p class="font-bold text-lg text-blue-600">Rp 150.000</p>
-                <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20KAOS%20ADIDAS%20seharga%20Rp150.000" class="bg-green-500 text-white px-4 py-2 rounded mt-2 hover:bg-green-700 block text-center">BELI SEKARANG</a>
-            </div>
-            
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="images/varsity-baseball.jpg" alt="VARSITY BASEBALL" class="w-full rounded">
-                <h2 class="text-xl font-semibold mt-2">VARSITY BASEBALL</h2>
-                <p class="text-gray-600">VARSITY TAMPILAN MEWAH DAN KEREN HARGA BERSAHABAT.</p>
-                <p class="font-bold text-lg text-blue-600">Rp 200.000</p>
-                <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20VARSITY%20BASEBALL%20seharga%20Rp200.000" class="bg-green-500 text-white px-4 py-2 rounded mt-2 hover:bg-green-700 block text-center">BELI SEKARANG</a>
-            </div>
-            
+<body>
+    <div class="container">
+        <h1>Fashion Minimalis</h1>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Produk 1">
+            <h2>Jaket Elegan</h2>
+            <p>Jaket bergaya minimalis yang cocok untuk semua suasana.</p>
+            <button>Beli Sekarang</button>
         </div>
-    </main>
-    
-    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
-        &copy; 2025 FASHION STORE. Hak Cipta Dilindungi.
-    </footer>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Produk 2">
+            <h2>Sepatu Kasual</h2>
+            <p>Sepatu nyaman dengan desain simpel dan modern.</p>
+            <button>Beli Sekarang</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Produk 3">
+            <h2>Tas Kulit</h2>
+            <p>Tas kulit premium yang cocok untuk berbagai kesempatan.</p>
+            <button>Beli Sekarang</button>
+        </div>
+    </div>
 </body>
 </html>
