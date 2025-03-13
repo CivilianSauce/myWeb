@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            transition: background-color 0.3s, color 0.3s;
         }
         .container {
             max-width: 900px;
@@ -23,6 +24,7 @@
             margin: 15px 0;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
         }
         img {
             width: 100%;
@@ -46,13 +48,46 @@
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
         .buy-button:hover {
             background-color: #555;
         }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            transition: color 0.3s;
+        }
+        .theme-toggle {
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .theme-toggle:hover {
+            background-color: #555;
+        }
+        body.dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        .dark-mode .product {
+            background: #333;
+            color: white;
+        }
+        .dark-mode .footer {
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">Mode Gelap/Terang</button>
     <div class="container">
         <h1>Fashion Minimalis yang Tersedia</h1>
         
@@ -60,24 +95,24 @@
             <img src="Screenshot_2025-02-03_11_30_49.jpg" alt="Produk 1">
             <h2>Jaket Elegan</h2>
             <p>Jaket bergaya minimalis yang cocok untuk semua suasana.</p>
-            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.900</p>
-            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini." class="buy-button" target="_blank">Pesan Sekarang!</a>
+            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.000</p>
+            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini" class="buy-button" target="_blank">Pesan Sekarang!</a>
         </div>
         
         <div class="product">
             <img src="Screenshot_2025-02-03_11_30_49.jpg" alt="Produk 2">
             <h2>Sepatu Kasual</h2>
             <p>Sepatu nyaman dengan desain simpel dan modern.</p>
-            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.900</p>
-            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini." class="buy-button" target="_blank">Pesan Sekarang!</a>
+            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.000</p>
+            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini" class="buy-button" target="_blank">Pesan Sekarang!</a>
         </div>
         
         <div class="product">
             <img src="Screenshot_2025-02-03_11_30_49.jpg" alt="Produk 3">
             <h2>Tas Kulit</h2>
             <p>Tas kulit premium yang cocok untuk berbagai kesempatan.</p>
-            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.900</p>
-            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini." class="buy-button" target="_blank">Pesan Sekarang!</a>
+            <p class="price"><span class="discounted-price">Rp299.000</span> Rp149.000</p>
+            <a href="https://api.whatsapp.com/send?phone=6285883163722&text=Halo,%20saya%20ingin%20membeli%20produk%20ini" class="buy-button" target="_blank">Pesan Sekarang!</a>
         </div>
     </div>
     <div class="footer">
