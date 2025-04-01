@@ -1,2 +1,2 @@
 # myWeb
-My Website
+This repository is for redirecting, but sometimes is used for other purposes
